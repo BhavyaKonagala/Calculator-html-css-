@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone Style Calculator</title>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: black;
+      border-radius: 30px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .display {
+      color: white;
+      background: black;
+      font-size: 48px;
+      text-align: right;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      height: 60px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+
+    button {
+      font-size: 20px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      background: #333;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      cursor: pointer;;
+    }
+
+    .gray {
+      background: #a5a5a5;
+      color: black;
+    }
+
+    .orange {
+      background: orange;
+    }
+
+    .zero {
+      grid-column: span 2;
+      border-radius: 30px;
+      text-align: left;
+      padding-left: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="display">0</div>
+    <div class="buttons">
+      <button class="gray">AC</button>
+      <button class="gray">⌫</button>
+      <button class="gray">%</button>
+      <button class="orange">÷</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="orange">x</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="orange">-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="orange">+</button>
+
+      <button class="zero">0</button>
+      <button>.</button>
+      <button class="orange">=</button>
+    </div>
+  </div>
+
+</body>
+</html>
